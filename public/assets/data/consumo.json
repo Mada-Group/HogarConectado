@@ -1,0 +1,69 @@
+{
+  "fecha": "2025-11-12",
+  "consumo_diario": [
+    12,
+    9,
+    6,
+    8,
+    10,
+    11,
+    9,
+    7,
+    6,
+    8,
+    10,
+    12,
+    11
+  ],
+  "consumo_mensual": [
+    320,
+    300,
+    290,
+    310,
+    330,
+    340,
+    360,
+    355,
+    345,
+    330,
+    320,
+    310
+  ],
+  "meses": [
+    "Ene",
+    "Feb",
+    "Mar",
+    "Abr",
+    "May",
+    "Jun",
+    "Jul",
+    "Ago",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dic"
+  ],
+  "resumen": {
+    "diario": 12,
+    "semanal": 80,
+    "ahorro": 12
+  },
+  "desglose": [
+    {
+      "nombre": "Refrigeradora",
+      "kwh": 4
+    },
+    {
+      "nombre": "TV",
+      "kwh": 2
+    },
+    {
+      "nombre": "Microondas",
+      "kwh": 3
+    },
+    {
+      "nombre": "Iluminaci\u00f3n",
+      "kwh": 1.5
+    }
+  ]
+}
