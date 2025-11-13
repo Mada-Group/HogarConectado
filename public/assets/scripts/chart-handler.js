@@ -7,7 +7,6 @@ let monthlyChartInstance = null;
 function renderFilteredData(filter) {
     if (!fullConsumoData) return; // No hacer nada si los datos no se han cargado
 
-    // 1. Filtrar los dispositivos
     let filteredDesglose;
     if (filter === 'hogar') {
         filteredDesglose = fullConsumoData.desglose.filter(d => d.categoria === 'hogar');

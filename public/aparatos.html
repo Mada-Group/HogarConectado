@@ -20,37 +20,43 @@
     </nav>
 </header>
 
-<aside class="side">
-    <ul>
-        <li><a href="dashboard.html">Mi consumo</a></li>
-        <li><a href="costos.html">Costos</a></li>
-        <li class="active">Aparatos</li>
-        <li><a href="recomendaciones.html">Recomendaciones</a></li>
-        <li><a href="ajustes.html">Ajustes</a></li>
-    </ul>
-</aside>
+<div class="dashboard-container">
+    <aside class="side">
+        <ul>
+            <li><a href="dashboard.html">Mi consumo</a></li>
+            <li><a href="costos.html">Costos</a></li>
+            <li class="active">Aparatos</li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+    </aside>
 
-<main class="dashboard">
-    <h2>Aparatos y Consumo Detallado</h2>
-    <p>Gestiona tus dispositivos y revisa su consumo individual para identificar oportunidades de ahorro.</p>
+    <main class="dashboard">
+        <h2>Aparatos y Consumo Detallado</h2>
+        <p>Gestiona tus dispositivos y revisa su consumo individual para identificar oportunidades de ahorro.</p>
 
-    <div class="card">
-        <h3>Dispositivos Registrados</h3>
-        <table class="device-table">
-            <thead>
-            <tr>
-                <th>Dispositivo</th>
-                <th>Consumo (últimas 24h)</th>
-                <th>Estado</th>
-                <th>Acciones</th>
-            </tr>
-            </thead>
-            <tbody id="device-table-body">
-            </tbody>
-        </table>
-    </div>
+        <div class="card">
+            <h3>Dispositivos Registrados</h3>
+            <table class="device-table">
+                <thead>
+                <tr>
+                    <th>Dispositivo</th>
+                    <th>Consumo (últimas 24h)</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody id="device-table-body">
+                </tbody>
+            </table>
+        </div>
 
-</main>
+    </main>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+</footer>
 
 <script src="assets/scripts/main.js"></script>
 <script src="assets/scripts/aparatos-handler.js"></script>

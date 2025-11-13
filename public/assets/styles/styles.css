@@ -1,24 +1,30 @@
 *{
-    box-sizing:border-box}
+    box-sizing:border-box;
+}
 
 body{
     font-family:'Open Sans', Arial, Helvetica, sans-serif;
     margin:0;
     color:#222;
-    background:#f3f6f8}
+    background:#f3f6f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 h1, h2, h3, h4, h5, h6, .brand span {
     font-family: 'Montserrat', sans-serif;
 }
 
-
+/* --- Topbar --- */
 .topbar{
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:10px 20px;
     background:#0C3A67;
-    color:#fff}
+    color:#fff;
+}
 
 .topbar .brand{
     display:flex;
@@ -30,7 +36,8 @@ h1, h2, h3, h4, h5, h6, .brand span {
 
 .topbar .brand img{
     width:50px;
-    height:50px}
+    height:50px;
+}
 
 .topbar nav a{
     color:#fff;
@@ -43,18 +50,21 @@ h1, h2, h3, h4, h5, h6, .brand span {
     background:#95BD2D;
     padding:8px 12px;
     border-radius:6px;
-    color:#000}
+    color:#000;
+}
 
 .topbar nav a.btn.alt{
     background:#0C3A67;
     color:#fff;
-    border:1px solid rgba(255,255,255,0.15)}
+    border:1px solid rgba(255,255,255,0.15);
+}
 
-
+/* --- Hero --- */
 .hero{
     display:flex;
     padding:40px;
-    gap:20px}
+    gap:20px;
+}
 
 .hero-left{
     flex:1;
@@ -64,11 +74,13 @@ h1, h2, h3, h4, h5, h6, .brand span {
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    border-radius:6px}
+    border-radius:6px;
+}
 
 .hero-left .hero-logo{
     width:140px;
-    margin-bottom:10px}
+    margin-bottom:10px;
+}
 
 .hero-right{
     flex:1;
@@ -78,14 +90,17 @@ h1, h2, h3, h4, h5, h6, .brand span {
     border-radius:6px;
     display:flex;
     flex-direction:column;
-    justify-content:center}
+    justify-content:center;
+}
 
 .hero-right h1{
     margin:0 0 10px;
-    font-size:28px}
+    font-size:28px;
+}
 
 .cta-row{
-    margin-top:16px}
+    margin-top:16px;
+}
 
 a.primary{
     background:#0C3A67;
@@ -94,7 +109,8 @@ a.primary{
     border-radius:8px;
     text-decoration:none;
     margin-right:8px;
-    display:inline-block}
+    display:inline-block;
+}
 
 a.secondary{
     background:transparent;
@@ -102,12 +118,15 @@ a.secondary{
     padding:12px 20px;
     border-radius:8px;
     text-decoration:none;
-    border:2px solid rgba(0,0,0,0.1)}
+    border:2px solid rgba(0,0,0,0.1);
+}
 
-
+/* --- Auth page --- */
 .auth-page{
     display:flex;
-    min-height:70vh}
+    flex: 1;
+    min-height: auto;
+}
 
 .auth-left{
     flex:1;
@@ -116,11 +135,13 @@ a.secondary{
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center}
+    justify-content:center;
+}
 
 .auth-left img{
     width:200px;
-    margin-bottom:12px}
+    margin-bottom:12px;
+}
 
 .auth-right{
     flex:1;
@@ -129,26 +150,31 @@ a.secondary{
     color:#222;
     display:flex;
     flex-direction:column;
-    justify-content:center}
+    justify-content:center;
+}
 
 .auth-right h2{
-    margin-top:0}
+    margin-top:0;
+}
 
 .auth-right form{
     display:flex;
     flex-direction:column;
-    gap:10px}
+    gap:10px;
+}
 
 .auth-right label{
     font-size:13px;
     color:#222;
     display:flex;
-    flex-direction:column}
+    flex-direction:column;
+}
 
 .auth-right input{
     padding:10px;
     border-radius:6px;
-    border:1px solid rgba(0,0,0,0.15)}
+    border:1px solid rgba(0,0,0,0.15);
+}
 
 .primary{
     background:#000;
@@ -169,26 +195,32 @@ a.secondary{
     font-family: 'Open Sans', sans-serif;
 }
 
-
 .msg{
     color:#061a10;
-    margin-top:6px}
+    margin-top:6px;
+}
 
+.dashboard-container{
+    display: flex;
+    align-items: stretch;
+    flex: 1;
+}
 
 .side{
-    width:180px;
+    width: 200px;
     background:#95BD2D;
-    position:fixed;
-    top:60px;
-    bottom:0;
-    left:0;
-    padding:20px}
+    padding:20px;
+    position: sticky;
+    top: 0;
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+}
 
 .side ul{
     list-style:none;
     padding:0;
     margin:0;
-
     color:#222;
 }
 
@@ -206,9 +238,8 @@ a.secondary{
 }
 
 .side li.active{
-    background:rgba(0,0,0,0.05)}
-
-
+    background:rgba(0,0,0,0.05);
+}
 
 .side-filter {
     padding: 0;
@@ -230,52 +261,57 @@ a.secondary{
     font-weight: 700;
 }
 
-
-
+/* Contenido principal */
 .dashboard{
-    margin-left:200px;
-    padding:30px}
+    flex: 1;
+    padding:30px;
+}
 
+/* --- Cards y charts --- */
 .cards{
     display:flex;
     gap:16px;
-    margin-bottom:18px}
+    margin-bottom:18px;
+}
 
 .card{
     background:#fff;
     padding:14px;
     border-radius:8px;
     box-shadow:0 1px 4px rgba(0,0,0,0.05);
-    flex:1}
-
+    flex:1;
+}
 
 .charts{
     display:flex;
     gap:16px;
-    margin-bottom:18px}
+    margin-bottom:18px;
+}
 
 .chart-card{
     background:#fff;
     padding:16px;
     border-radius:8px;
-    flex:2}
+    flex:2;
+}
 
 .chart-card.small{
-    flex:1}
+    flex:1;
+}
 
 .device-list{
-    padding-left:12px}
-
+    padding-left:12px;
+}
 
 .site-footer{
     text-align:center;
     padding:18px;
     background:#fff;
-    margin-top:20px}
+    margin-top:auto;
+    border-top: 1px solid #eee;
+}
 
 /* --- ESTILOS DE TABLA Y ALERTAS (DE PASOS ANTERIORES) --- */
-
-/* Estilos para la tabla de dispositivos en aparatos.html */
 .device-table {
     width: 100%;
     border-collapse: collapse;

@@ -22,51 +22,57 @@
     </nav>
 </header>
 
-<aside class="side">
-    <ul>
-        <li class="active">Mi consumo</li>
-        <li><a href="costos.html">Costos</a></li>
-        <li><a href="aparatos.html">Aparatos</a></li>
-        <li><a href="recomendaciones.html">Recomendaciones</a></li>
-        <li><a href="ajustes.html">Ajustes</a></li>
-    </ul>
+<div class="dashboard-container">
+    <aside class="side">
+        <ul>
+            <li class="active">Mi consumo</li>
+            <li><a href="costos.html">Costos</a></li>
+            <li><a href="aparatos.html">Aparatos</a></li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
 
-    <ul class="side-filter">
-        <li id="filter-todo" class="active-filter">Ver Todo</li>
-        <li id="filter-hogar">🏠 Solo Hogar</li>
-        <li id="filter-negocio">💼 Solo Negocio</li>
-    </ul>
-</aside>
+        <ul class="side-filter">
+            <li id="filter-todo" class="active-filter">Ver Todo</li>
+            <li id="filter-hogar">🏠 Solo Hogar</li>
+            <li id="filter-negocio">💼 Solo Negocio</li>
+        </ul>
+    </aside>
 
-<main class="dashboard">
-    <h2>Mi consumo</h2>
+    <main class="dashboard">
+        <h2>Mi consumo</h2>
 
-    <section id="alert-section" class="alerts" style="display: none;"></section>
+        <section id="alert-section" class="alerts" style="display: none;"></section>
 
-    <div class="cards">
-        <div class="card">Consumo Diario<br><strong id="daily-val">-- kWh</strong></div>
-        <div class="card">Consumo Semanal<br><strong id="weekly-val">-- kWh</strong></div>
-        <div class="card">Ahorro<br><strong id="save-val">--%</strong></div>
-    </div>
-
-    <section class="charts">
-        <div class="chart-card">
-            <h3>Consumo Diario (Total)</h3>
-            <canvas id="chart-daily"></canvas>
+        <div class="cards">
+            <div class="card">Consumo Diario<br><strong id="daily-val">-- kWh</strong></div>
+            <div class="card">Consumo Semanal<br><strong id="weekly-val">-- kWh</strong></div>
+            <div class="card">Ahorro<br><strong id="save-val">--%</strong></div>
         </div>
-        <div class="chart-card small">
-            <h3>Desglose por dispositivo</h3>
-            <ul id="device-list" class="device-list"></ul>
-        </div>
-    </section>
 
-    <section class="charts">
-        <div class="chart-card">
-            <h3>Tendencia mensual (Total)</h3>
-            <canvas id="chart-monthly"></canvas>
-        </div>
-    </section>
-</main>
+        <section class="charts">
+            <div class="chart-card">
+                <h3>Consumo Diario (Total)</h3>
+                <canvas id="chart-daily"></canvas>
+            </div>
+            <div class="chart-card small">
+                <h3>Desglose por dispositivo</h3>
+                <ul id="device-list" class="device-list"></ul>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-card">
+                <h3>Tendencia mensual (Total)</h3>
+                <canvas id="chart-monthly"></canvas>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="assets/scripts/chart-handler.js"></script>
