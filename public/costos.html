@@ -21,42 +21,48 @@
     </nav>
 </header>
 
-<aside class="side">
-    <ul>
-        <li><a href="dashboard.html">Mi consumo</a></li>
-        <li class="active">Costos</li>
-        <li><a href="aparatos.html">Aparatos</a></li>
-        <li><a href="recomendaciones.html">Recomendaciones</a></li>
-        <li><a href="ajustes.html">Ajustes</a></li>
-    </ul>
-</aside>
+<div class="dashboard-container">
+    <aside class="side">
+        <ul>
+            <li><a href="dashboard.html">Mi consumo</a></li>
+            <li class="active">Costos</li>
+            <li><a href="aparatos.html">Aparatos</a></li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+    </aside>
 
-<main class="dashboard">
-    <h2>Costos y Facturación</h2>
+    <main class="dashboard">
+        <h2>Costos y Facturación</h2>
 
-    <div class="cards">
-        <div class="card">
-            Proyección mes actual<br>
-            <strong id="costo-proy-val">S/ 120.50</strong>
+        <div class="cards">
+            <div class="card">
+                Proyección mes actual<br>
+                <strong id="costo-proy-val">S/ 120.50</strong>
+            </div>
+            <div class="card">
+                Facturación mes anterior<br>
+                <strong id="costo-ant-val">S/ 115.20</strong>
+            </div>
+            <div class="card">
+                Ahorro en S/<br>
+                <strong id="costo-ahorro-val">S/ 12.00</strong>
+            </div>
         </div>
-        <div class="card">
-            Facturación mes anterior<br>
-            <strong id="costo-ant-val">S/ 115.20</strong>
-        </div>
-        <div class="card">
-            Ahorro en S/<br>
-            <strong id="costo-ahorro-val">S/ 12.00</strong>
-        </div>
-    </div>
 
-    <section class="charts">
-        <div class="chart-card">
-            <h3>Historial de Facturación (Soles)</h3>
-            <p>Gráfico de historial de costos iría aquí...</p>
-        </div>
-    </section>
+        <section class="charts">
+            <div class="chart-card">
+                <h3>Historial de Facturación (Soles)</h3>
+                <p>Gráfico de historial de costos iría aquí...</p>
+            </div>
+        </section>
 
-</main>
+    </main>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+</footer>
 
 <script src="assets/scripts/main.js"></script>
 </body>
