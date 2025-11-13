@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hogar Conectado - Ajustes</title>
+
+
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+<header class="topbar">
+</header>
+
+<aside class="side">
+    <ul>
+        <li><a href="dashboard.html">Mi consumo</a></li>
+        <li><a href="costos.html">Costos</a></li>
+        <li><a href="aparatos.html">Aparatos</a></li>
+        <li><a href="recomendaciones.html">Recomendaciones</a></li>
+        <li class="active">Ajustes</li>
+    </ul>
+</aside>
+
+<main class="dashboard">
+
+
+    <div class="card">
+        <h3>Datos Personales</h3>
+        <form id="form-ajustes" class="auth-right" style="padding:0; background:none;">
+            <label>Nombre de usuario
+                <input type="text" id="ajustes-username" value="UsernameActual">
+            </label>
+            <label>Correo electrónico
+                <input type="email" id="ajustes-email" value="correo@actual.com" disabled>
+            </label>
+            <label>Cambiar Contraseña
+                <input type="password" id="ajustes-pass">
+            </label>
+            <button type="submit" class="primary">Guardar Cambios</button>
+        </form>
+    </div>
+
+</main>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>

@@ -51,19 +51,28 @@
   "desglose": [
     {
       "nombre": "Refrigeradora",
-      "kwh": 4
+      "kwh": 4,
+      "categoria": "hogar"
     },
     {
       "nombre": "TV",
-      "kwh": 2
+      "kwh": 2,
+      "categoria": "hogar"
     },
     {
-      "nombre": "Microondas",
-      "kwh": 3
+      "nombre": "Congeladora Negocio",
+      "kwh": 3,
+      "categoria": "negocio"
     },
     {
-      "nombre": "Iluminaci\u00f3n",
-      "kwh": 1.5
+      "nombre": "Iluminación",
+      "kwh": 1.5,
+      "categoria": "hogar"
+    },
+    {
+      "nombre": "Computadora Oficina",
+      "kwh": 1.5,
+      "categoria": "negocio"
     }
   ]
 }
