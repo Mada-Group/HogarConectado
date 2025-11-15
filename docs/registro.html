@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hogar Conectado - Registro</title>
+
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="brand"><img src="assets/images/logoHogarConectado.png" alt="logo"><span>Hogar Conectado</span></div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="dashboard.html">Mi consumo</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="registro.html" class="btn">Crear cuenta</a>
+        <a href="login.html" class="btn alt">Iniciar Sesión</a>
+    </nav>
+</header>
+
+<main class="auth-page">
+    <div class="auth-left">
+        <img src="assets/images/logoVacio.png" alt="logo big">
+        <p class="tag">"Información de tu consumo eléctrico siempre a tiempo real"</p>
+    </div>
+    <div class="auth-right">
+        <h2>CREAR CUENTA NUEVA</h2>
+        <form id="form-register">
+            <label>Nombre de usuario<input type="text" id="reg-username" required></label>
+            <label>Correo electrónico<input type="email" id="reg-email" required></label>
+            <label>Contraseña<input type="password" id="reg-pass" minlength="6" required></label>
+            <label>Confirmar contraseña<input type="password" id="reg-pass2" minlength="6" required></label>
+            <button type="submit" class="primary">REGISTRARSE</button>
+            <p id="reg-msg" class="msg"></p>
+        </form>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+</footer>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>

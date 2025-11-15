@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hogar Conectado - Aparatos</title>
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="brand"><img src="assets/images/logoHogarConectado.png" alt="logo"><span>Hogar Conectado</span></div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="dashboard.html">Mi consumo</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="registro.html" class="btn">Crear cuenta</a>
+        <a href="login.html" class="btn alt">Iniciar Sesión</a>
+    </nav>
+</header>
+
+<div class="dashboard-container">
+    <aside class="side">
+        <ul>
+            <li><a href="dashboard.html">Mi consumo</a></li>
+            <li><a href="costos.html">Costos</a></li>
+            <li class="active">Aparatos</li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard">
+        <h2>Aparatos y Consumo Detallado</h2>
+        <p>Gestiona tus dispositivos y revisa su consumo individual para identificar oportunidades de ahorro.</p>
+
+        <div class="card">
+            <h3>Dispositivos Registrados</h3>
+            <table class="device-table">
+                <thead>
+                <tr>
+                    <th>Dispositivo</th>
+                    <th>Consumo (últimas 24h)</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody id="device-table-body">
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+</footer>
+
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/aparatos-handler.js"></script>
+</body>
+</html>

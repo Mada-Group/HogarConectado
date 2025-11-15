@@ -1,0 +1,78 @@
+{
+  "fecha": "2025-11-12",
+  "consumo_diario": [
+    12,
+    9,
+    6,
+    8,
+    10,
+    11,
+    9,
+    7,
+    6,
+    8,
+    10,
+    12,
+    11
+  ],
+  "consumo_mensual": [
+    320,
+    300,
+    290,
+    310,
+    330,
+    340,
+    360,
+    355,
+    345,
+    330,
+    320,
+    310
+  ],
+  "meses": [
+    "Ene",
+    "Feb",
+    "Mar",
+    "Abr",
+    "May",
+    "Jun",
+    "Jul",
+    "Ago",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dic"
+  ],
+  "resumen": {
+    "diario": 12,
+    "semanal": 80,
+    "ahorro": 12
+  },
+  "desglose": [
+    {
+      "nombre": "Refrigeradora",
+      "kwh": 4,
+      "categoria": "hogar"
+    },
+    {
+      "nombre": "TV",
+      "kwh": 2,
+      "categoria": "hogar"
+    },
+    {
+      "nombre": "Congeladora Negocio",
+      "kwh": 3,
+      "categoria": "negocio"
+    },
+    {
+      "nombre": "Iluminación",
+      "kwh": 1.5,
+      "categoria": "hogar"
+    },
+    {
+      "nombre": "Computadora Oficina",
+      "kwh": 1.5,
+      "categoria": "negocio"
+    }
+  ]
+}
