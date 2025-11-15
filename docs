@@ -1,49 +1,62 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Hogar Conectado - Login</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hogar Conectado - Login</title>
 
-    <link rel="stylesheet" href="assets/styles/styles.css">
+  <!-- CSS: ruta relativa (debe existir docs/assets/styles/styles.css) -->
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
 <header class="topbar">
-    <div class="brand"><img src="assets/images/logoHogarConectado.png" alt="logo"><span>Hogar Conectado</span></div>
-    <nav>
-        <a href="dashboard.html">Mi consumo</a>
-        <a href="index.html">Inicio</a>
-        <a href="#">Sobre Nosotros</a>
-        <a href="#">Contacto</a>
-        <a href="registro.html" class="btn">Crear cuenta</a>
-        <a href="login.html" class="btn alt">Iniciar Sesión</a>
-
-    </nav>
+  <div class="brand">
+    <img src="assets/images/logoHogarConectado.png" alt="logo Hogar Conectado">
+    <span>Hogar Conectado</span>
+  </div>
+  <nav>
+    <a href="dashboard.html">Mi consumo</a>
+    <a href="index.html">Inicio</a>
+    <a href="#">Sobre Nosotros</a>
+    <a href="#">Contacto</a>
+    <a href="registro.html" class="btn">Crear cuenta</a>
+    <a href="login.html" class="btn alt">Iniciar Sesión</a>
+  </nav>
 </header>
 
 <main class="auth-page">
-    <div class="auth-left">
-        <h2>Iniciar Sesión</h2>
-        <img src="assets/images/logoVacio.png" alt="logo big" class="hero-logo">
-        <p>Accede a tu cuenta para ver tu consumo de energía.</p>
-    </div>
-    <div class="auth-right">
-        <form id="form-login">
-            <label>Correo Electrónico<input type="email" id="login-email" required></label>
-            <label>Contraseña<input type="password" id="login-pass" required></label>
-            <div class="row">
-                <button type="button" id="forgot" class="ghost">Olvidé mi contraseña</button>
-                <button type="submit" class="primary">Iniciar Sesión</button>
-            </div>
-            <p id="login-msg" class="msg"></p>
-        </form>
-    </div>
+  <div class="auth-left">
+    <h2>Iniciar Sesión</h2>
+    <img src="assets/images/logoVacio.png" alt="logo grande" class="hero-logo">
+    <p>Accede a tu cuenta para ver tu consumo de energía.</p>
+  </div>
+
+  <div class="auth-right">
+    <form id="form-login">
+      <label>Correo Electrónico
+        <input type="email" id="login-email" required>
+      </label>
+      <label>Contraseña
+        <input type="password" id="login-pass" required>
+      </label>
+
+      <div class="row">
+        <button type="button" id="forgot" class="ghost">Olvidé mi contraseña</button>
+        <button type="submit" class="primary">Iniciar Sesión</button>
+      </div>
+
+      <p id="login-msg" class="msg"></p>
+    </form>
+  </div>
 </main>
 
 <footer class="site-footer">
-    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+  <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
 </footer>
 
-<script src="assets/scripts/main.js"></script>
+<!-- JS: ruta relativa (debe existir docs/assets/scripts/main.js) -->
+<script src="assets/scripts/main.js" defer></script>
+
+<!-- redeploy: 2025-11-14T00:00:00Z -->
 </body>
 </html>
