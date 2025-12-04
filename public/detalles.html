@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hogar Conectado - Detalles</title>
+    <link rel="icon" href="assets/images/logoHogarConectado.png" type="image/png">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<header class="topbar">
+    <div class="brand"><img src="assets/images/logoHogarConectado.png" alt="logo"><span>Hogar Conectado</span></div>
+    <nav>
+        <a href="dashboard.html">Inicio</a>
+        <a href="dashboard.html">Mi consumo</a>
+        <a href="#" id="user-link">Usuario</a>
+    </nav>
+</header>
+
+<div class="dashboard-container">
+    <aside class="side">
+        <ul>
+            <li><a href="dashboard.html">Mi consumo</a></li>
+            <li><a href="costos.html">Costos</a></li>
+            <li class="active"><a href="aparatos.html">Aparatos</a></li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard">
+        <a href="aparatos.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a mis aparatos</a>
+
+        <h2 class="detail-title">Refrigeradora</h2>
+
+        <div class="details-layout">
+            <div class="details-info-card">
+                <div class="detail-item">
+                    <h3>Consumo actual:</h3>
+                    <p>El consumo total de este mes ha sido de 45 kWh</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Costo estimado:</h3>
+                    <p>El costo aproximado para el recibo es de 25 nuevos soles</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Estado:</h3>
+                    <p>Presenta un consumo bajo. Normal y eficiente.</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Comparativa:</h3>
+                    <p>El diferencial de consumo respecto al mes anterior fue de 6 kWh</p>
+                </div>
+            </div>
+
+            <div class="details-image-container">
+                <img src="assets/images/refri.png" alt="">
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+</footer>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
