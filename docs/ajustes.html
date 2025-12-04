@@ -1,22 +1,25 @@
 <!doctype html>
 <html lang="es">
 <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Hogar Conectado - Aparatos</title>
-    <link rel="icon" href="assets/images/logoHogarConectado.png" type="image/png">
+    <title>Hogar Conectado - Ajustes</title>
+
+
+
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
-
 <body>
 <header class="topbar">
     <div class="brand"><img src="assets/images/logoHogarConectado.png" alt="logo"><span>Hogar Conectado</span></div>
     <nav>
-        <a href="dashboard.html">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="dashboard.html">Mi consumo</a>
         <a href="#">Sobre Nosotros</a>
         <a href="#">Contacto</a>
-        <a href="#" id="user-link">Usuario</a>
+        <a href="registro.html" class="btn">Crear cuenta</a>
+        <a href="login.html" class="btn alt">Iniciar Sesión</a>
     </nav>
 </header>
 
@@ -25,30 +28,30 @@
         <ul>
             <li><a href="dashboard.html">Mi consumo</a></li>
             <li><a href="costos.html">Costos</a></li>
-            <li class="active">Aparatos</li>
+            <li><a href="aparatos.html">Aparatos</a></li>
             <li><a href="recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="ajustes.html">Ajustes</a></li>
+            <li class="active">Ajustes</li>
         </ul>
     </aside>
 
     <main class="dashboard">
-        <h2>Aparatos y Consumo Detallado</h2>
-        <p>Gestiona tus dispositivos y revisa su consumo individual para identificar oportunidades de ahorro.</p>
+
+        <h2>Ajustes</h2>
 
         <div class="card">
-            <h3>Dispositivos Registrados</h3>
-            <table class="device-table">
-                <thead>
-                <tr>
-                    <th>Dispositivo</th>
-                    <th>Consumo (últimas 24h)</th>
-                    <th>Estado</th>
-                    <th>Acciones</th>
-                </tr>
-                </thead>
-                <tbody id="device-table-body">
-                </tbody>
-            </table>
+            <h3>Datos Personales</h3>
+            <form id="form-ajustes" class="auth-right" style="padding:0; background:none;">
+                <label>Nombre de usuario
+                    <input type="text" id="ajustes-username" value="UsernameActual">
+                </label>
+                <label>Correo electrónico
+                    <input type="email" id="ajustes-email" value="correo@actual.com" disabled>
+                </label>
+                <label>Cambiar Contraseña
+                    <input type="password" id="ajustes-pass">
+                </label>
+                <button type="submit" class="primary">Guardar Cambios</button>
+            </form>
         </div>
 
     </main>
@@ -59,6 +62,5 @@
 </footer>
 
 <script src="assets/scripts/main.js"></script>
-<script src="assets/scripts/aparatos-handler.js"></script>
 </body>
 </html>
