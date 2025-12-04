@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hogar Conectado - Sobre Nosotros</title>
+    <link rel="icon" href="assets/images/logoHogarConectado.png" type="image/png">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="about-page-body">
+
+<header class="topbar">
+    <div class="brand">
+        <img src="assets/images/logoHogarConectado.png" alt="logo">
+        <span>Hogar Conectado</span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html" class="active-link">Sobre Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="registro.html" class="btn">Crear cuenta</a>
+        <a href="login.html" class="btn alt">Iniciar Sesión</a>
+    </nav>
+</header>
+
+<main class="about-section">
+    <div class="about-header">
+        <h1>Sobre Nosotros</h1>
+        <p>Conoce más sobre nuestra misión y visión.</p>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-item">
+            <div class="icon-container">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3>Nuestra Misión</h3>
+            <p class="desc">Promover el uso eficiente de la energía.</p>
+            <p class="highlight">Brindar a los usuarios herramientas para mejorar su consumo.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="icon-container">
+                <i class="fa-solid fa-lightbulb"></i> </div>
+            <h3>Nuestra Visión</h3>
+            <p class="desc">Un mundo con energía responsable.</p>
+            <p class="highlight">Crear conciencia sobre el ahorro energético.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="icon-container">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Valores</h3>
+            <p class="desc">Responsabilidad y transparencia laboral</p>
+            <p class="highlight">Transparencia, sostenibilidad y simplicidad.</p>
+        </div>
+
+        <div class="about-item">
+            <div class="icon-container">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Nuestro equipo</h3>
+            <p class="desc">Eficiencia de alto nivel</p>
+            <p class="highlight">Crear conciencia sobre el ahorro energético.</p>
+        </div>
+    </div>
+
+    <footer class="about-footer">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos y Condiciones</a>
+    </footer>
+</main>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
