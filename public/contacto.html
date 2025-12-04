@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hogar Conectado - Contacto</title>
+    <link rel="icon" href="assets/images/logoHogarConectado.png" type="image/png">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <img src="assets/images/logoHogarConectado.png" alt="logo">
+        <span>Hogar Conectado</span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="registro.html" class="btn">Crear cuenta</a>
+        <a href="login.html" class="btn alt">Iniciar Sesión</a>
+    </nav>
+</header>
+
+<section class="contact-hero">
+    <h1>CONTÁCTANOS</h1>
+    <p>Rellena nuestro formulario o llámanos al teléfono</p>
+</section>
+
+<main class="contact-main">
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <form id="form-contacto">
+                <div class="form-group">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </form>
+        </div>
+
+        <div class="contact-right">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <strong>Teléfono</strong>
+                    <p>4398836-5657-345</p>
+                </div>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <strong>Correo</strong>
+                    <p>pcejemplo@mail.com</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Hogar Conectado. Todos los derechos reservados.</p>
+</footer>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
