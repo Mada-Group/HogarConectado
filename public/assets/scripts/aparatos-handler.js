@@ -15,7 +15,7 @@ async function initAparatos() {
           <td>${device.nombre}</td>
           <td>${device.kwh} kWh</td>
           <td><span class="status-connected">Conectado</span></td>
-          <td><button class="ghost">Ver detalle</button></td>
+          <td><button class="ghost" onclick="window.location.href='detalles.html'">Ver detalle</button></td>
         `;
 
                 tableBody.appendChild(row);
