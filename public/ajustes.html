@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="es">
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Hogar Conectado - Ajustes</title>
-
-
-
+    <link rel="icon" href="assets/images/logoHogarConectado.png" type="image/png">
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
+
 <body>
 <header class="topbar">
+    <div class="brand"><img src="assets/images/logoHogarConectado.png" alt="logo"><span>Hogar Conectado</span></div>
+    <nav>
+        <a href="dashboard.html">Inicio</a>
+        <a href="dashboard.html">Mi consumo</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="#" id="user-link">Usuario</a>
+    </nav>
 </header>
 
 <aside class="side">
@@ -25,8 +31,6 @@
 </aside>
 
 <main class="dashboard">
-
-
     <div class="card">
         <h3>Datos Personales</h3>
         <form id="form-ajustes" class="auth-right" style="padding:0; background:none;">
@@ -40,9 +44,9 @@
                 <input type="password" id="ajustes-pass">
             </label>
             <button type="submit" class="primary">Guardar Cambios</button>
+            <p id="ajustes-msg" class="msg"></p>
         </form>
     </div>
-
 </main>
 
 <script src="assets/scripts/main.js"></script>

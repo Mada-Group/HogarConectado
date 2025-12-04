@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
             msg.innerText='Registro exitoso. Redirigiendo...';
 
-            setTimeout(()=> location.href='dashboard.html', 900);
+            setTimeout(()=> location.href='login.html', 900);
 
         });
 
@@ -100,6 +100,59 @@ document.addEventListener('DOMContentLoaded', ()=>{
             });
 
         }
+    }
+
+    //Guardar cambios
+    const ajustesForm = document.getElementById('form-ajustes');
+
+    if(ajustesForm){
+        const currentEmail = localStorage.getItem('hc_current');
+        const users = JSON.parse(localStorage.getItem('hc_users') || '{}');
+        const msg = document.getElementById('ajustes-msg');
+
+        if(currentEmail && users[currentEmail]){
+            const userData = users[currentEmail];
+            document.getElementById('ajustes-username').value = userData.username;
+            document.getElementById('ajustes-email').value = userData.email;
+        }
+
+        ajustesForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Evita que la página se recargue
+            const newName = document.getElementById('ajustes-username').value.trim();
+            const newPass = document.getElementById('ajustes-pass').value;
+            if(!newName){
+                if(msg) {
+                    msg.style.color = 'red';
+                    msg.innerText = 'El nombre no puede estar vacío';
+                }
+                return;
+            }
+            if(users[currentEmail]){
+                users[currentEmail].username = newName;
+                if(newPass.length > 0){
+                    if(newPass.length < 6){
+                        if(msg) {
+                            msg.style.color = 'red';
+                            msg.innerText = 'La contraseña debe tener 6 caracteres';
+                        }
+                        return;
+                    }
+                    users[currentEmail].pass = newPass;
+                }
+                localStorage.setItem('hc_users', JSON.stringify(users));
+
+                if(msg){
+                    msg.style.color = 'green';
+                    msg.innerText = 'Cambios guardados correctamente.';
+
+                    setTimeout(() => msg.innerText = '', 3000);
+                }
+
+                const userLink = document.getElementById('user-link');
+                if(userLink) userLink.innerText = newName + ' (Salir)';
+                document.getElementById('ajustes-pass').value = '';
+            }
+        });
     }
 });
 

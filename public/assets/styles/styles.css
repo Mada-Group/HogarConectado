@@ -5,12 +5,17 @@ body{
     font-family:'Open Sans', Arial, Helvetica, sans-serif;
     margin:0;
     color:#222;
-    background:#f3f6f8}
+    background:#f3f6f8;}
 
 h1, h2, h3, h4, h5, h6, .brand span {
     font-family: 'Montserrat', sans-serif;
 }
 
+.dashboard {
+    margin-left: 200px;
+    padding: 30px;
+    margin-top: 50px;
+}
 
 .topbar{
     display:flex;
@@ -18,7 +23,15 @@ h1, h2, h3, h4, h5, h6, .brand span {
     justify-content:space-between;
     padding:10px 20px;
     background:#0C3A67;
-    color:#fff}
+    color:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
 .topbar .brand{
     display:flex;
@@ -107,6 +120,7 @@ a.secondary{
 
 .auth-page{
     display:flex;
+    margin-top: 50px;
     min-height:70vh}
 
 .auth-left{
@@ -179,10 +193,12 @@ a.secondary{
     width:180px;
     background:#95BD2D;
     position:fixed;
-    top:60px;
+    top:70px;
     bottom:0;
     left:0;
-    padding:20px}
+    padding:20px;
+    z-index:900;
+}
 
 .side ul{
     list-style:none;
@@ -273,7 +289,6 @@ a.secondary{
     background:#fff;
     margin-top:20px}
 
-/* --- ESTILOS DE TABLA Y ALERTAS (DE PASOS ANTERIORES) --- */
 
 /* Estilos para la tabla de dispositivos en aparatos.html */
 .device-table {
@@ -321,4 +336,131 @@ a.secondary{
 .alerts ul {
     margin: 0;
     padding-left: 20px;
+}
+
+#form-ajustes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+#form-ajustes button.primary {
+    margin-top: 10px;
+    padding: 14px;
+    font-size: 16px;
+    align-self: flex-start; /* Para que el botón no ocupe todo el ancho (opcional) */
+    min-width: 200px;
+}
+
+.about-page-body {
+    background-color: #95BD2D; /* El verde de tu marca */
+    padding-top: 70px; /* Compensa la barra fija superior */
+    min-height: 100vh;
+}
+
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+    color: #222;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px; /* Tamaño grande como en la imagen */
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.about-header p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+
+/* Grid Layout para los 4 elementos */
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Sobre Nosotros */
+.about-footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-footer a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.about-footer a:hover {
+    text-decoration: underline;
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.about-item {
+    flex: 1;
+    min-width: 240px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    cursor: default;
+}
+
+.icon-container {
+    font-size: 50px;
+    color: #0C3A67;
+    margin-bottom: 20px;
+    background: #eef2f3;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.about-item h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #0C3A67;
+}
+
+.about-item .desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
