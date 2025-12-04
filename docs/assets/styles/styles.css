@@ -1,22 +1,22 @@
 *{
-    box-sizing:border-box;
-}
+    box-sizing:border-box}
 
 body{
     font-family:'Open Sans', Arial, Helvetica, sans-serif;
     margin:0;
     color:#222;
-    background:#f3f6f8;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+    background:#f3f6f8;}
 
 h1, h2, h3, h4, h5, h6, .brand span {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* --- Topbar --- */
+.dashboard {
+    margin-left: 200px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
 .topbar{
     display:flex;
     align-items:center;
@@ -24,6 +24,13 @@ h1, h2, h3, h4, h5, h6, .brand span {
     padding:10px 20px;
     background:#0C3A67;
     color:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .topbar .brand{
@@ -36,8 +43,7 @@ h1, h2, h3, h4, h5, h6, .brand span {
 
 .topbar .brand img{
     width:50px;
-    height:50px;
-}
+    height:50px}
 
 .topbar nav a{
     color:#fff;
@@ -50,21 +56,18 @@ h1, h2, h3, h4, h5, h6, .brand span {
     background:#95BD2D;
     padding:8px 12px;
     border-radius:6px;
-    color:#000;
-}
+    color:#000}
 
 .topbar nav a.btn.alt{
     background:#0C3A67;
     color:#fff;
-    border:1px solid rgba(255,255,255,0.15);
-}
+    border:1px solid rgba(255,255,255,0.15)}
 
-/* --- Hero --- */
+
 .hero{
     display:flex;
     padding:40px;
-    gap:20px;
-}
+    gap:20px}
 
 .hero-left{
     flex:1;
@@ -74,13 +77,11 @@ h1, h2, h3, h4, h5, h6, .brand span {
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    border-radius:6px;
-}
+    border-radius:6px}
 
 .hero-left .hero-logo{
     width:140px;
-    margin-bottom:10px;
-}
+    margin-bottom:10px}
 
 .hero-right{
     flex:1;
@@ -90,17 +91,14 @@ h1, h2, h3, h4, h5, h6, .brand span {
     border-radius:6px;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-}
+    justify-content:center}
 
 .hero-right h1{
     margin:0 0 10px;
-    font-size:28px;
-}
+    font-size:28px}
 
 .cta-row{
-    margin-top:16px;
-}
+    margin-top:16px}
 
 a.primary{
     background:#0C3A67;
@@ -109,8 +107,7 @@ a.primary{
     border-radius:8px;
     text-decoration:none;
     margin-right:8px;
-    display:inline-block;
-}
+    display:inline-block}
 
 a.secondary{
     background:transparent;
@@ -118,15 +115,13 @@ a.secondary{
     padding:12px 20px;
     border-radius:8px;
     text-decoration:none;
-    border:2px solid rgba(0,0,0,0.1);
-}
+    border:2px solid rgba(0,0,0,0.1)}
 
-/* --- Auth page --- */
+
 .auth-page{
     display:flex;
-    flex: 1;
-    min-height: auto;
-}
+    margin-top: 50px;
+    min-height:70vh}
 
 .auth-left{
     flex:1;
@@ -135,13 +130,11 @@ a.secondary{
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
-}
+    justify-content:center}
 
 .auth-left img{
     width:200px;
-    margin-bottom:12px;
-}
+    margin-bottom:12px}
 
 .auth-right{
     flex:1;
@@ -150,31 +143,26 @@ a.secondary{
     color:#222;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-}
+    justify-content:center}
 
 .auth-right h2{
-    margin-top:0;
-}
+    margin-top:0}
 
 .auth-right form{
     display:flex;
     flex-direction:column;
-    gap:10px;
-}
+    gap:10px}
 
 .auth-right label{
     font-size:13px;
     color:#222;
     display:flex;
-    flex-direction:column;
-}
+    flex-direction:column}
 
 .auth-right input{
     padding:10px;
     border-radius:6px;
-    border:1px solid rgba(0,0,0,0.15);
-}
+    border:1px solid rgba(0,0,0,0.15)}
 
 .primary{
     background:#000;
@@ -195,32 +183,28 @@ a.secondary{
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .msg{
     color:#061a10;
-    margin-top:6px;
-}
+    margin-top:6px}
 
-.dashboard-container{
-    display: flex;
-    align-items: stretch;
-    flex: 1;
-}
 
 .side{
-    width: 200px;
+    width:180px;
     background:#95BD2D;
+    position:fixed;
+    top:70px;
+    bottom:0;
+    left:0;
     padding:20px;
-    position: sticky;
-    top: 0;
-    height: auto;
-    min-height: 100%;
-    overflow-y: auto;
+    z-index:900;
 }
 
 .side ul{
     list-style:none;
     padding:0;
     margin:0;
+
     color:#222;
 }
 
@@ -238,8 +222,9 @@ a.secondary{
 }
 
 .side li.active{
-    background:rgba(0,0,0,0.05);
-}
+    background:rgba(0,0,0,0.05)}
+
+
 
 .side-filter {
     padding: 0;
@@ -261,57 +246,51 @@ a.secondary{
     font-weight: 700;
 }
 
-/* Contenido principal */
-.dashboard{
-    flex: 1;
-    padding:30px;
-}
 
-/* --- Cards y charts --- */
+
+.dashboard{
+    margin-left:200px;
+    padding:30px}
+
 .cards{
     display:flex;
     gap:16px;
-    margin-bottom:18px;
-}
+    margin-bottom:18px}
 
 .card{
     background:#fff;
     padding:14px;
     border-radius:8px;
     box-shadow:0 1px 4px rgba(0,0,0,0.05);
-    flex:1;
-}
+    flex:1}
+
 
 .charts{
     display:flex;
     gap:16px;
-    margin-bottom:18px;
-}
+    margin-bottom:18px}
 
 .chart-card{
     background:#fff;
     padding:16px;
     border-radius:8px;
-    flex:2;
-}
+    flex:2}
 
 .chart-card.small{
-    flex:1;
-}
+    flex:1}
 
 .device-list{
-    padding-left:12px;
-}
+    padding-left:12px}
+
 
 .site-footer{
     text-align:center;
     padding:18px;
     background:#fff;
-    margin-top:auto;
-    border-top: 1px solid #eee;
-}
+    margin-top:20px}
 
-/* --- ESTILOS DE TABLA Y ALERTAS (DE PASOS ANTERIORES) --- */
+
+/* Estilos para la tabla de dispositivos en aparatos.html */
 .device-table {
     width: 100%;
     border-collapse: collapse;
@@ -357,4 +336,131 @@ a.secondary{
 .alerts ul {
     margin: 0;
     padding-left: 20px;
+}
+
+#form-ajustes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+#form-ajustes button.primary {
+    margin-top: 10px;
+    padding: 14px;
+    font-size: 16px;
+    align-self: flex-start; /* Para que el botón no ocupe todo el ancho (opcional) */
+    min-width: 200px;
+}
+
+.about-page-body {
+    background-color: #95BD2D; /* El verde de tu marca */
+    padding-top: 70px; /* Compensa la barra fija superior */
+    min-height: 100vh;
+}
+
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+    color: #222;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px; /* Tamaño grande como en la imagen */
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.about-header p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+
+/* Grid Layout para los 4 elementos */
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Sobre Nosotros */
+.about-footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-footer a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.about-footer a:hover {
+    text-decoration: underline;
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.about-item {
+    flex: 1;
+    min-width: 240px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    cursor: default;
+}
+
+.icon-container {
+    font-size: 50px;
+    color: #0C3A67;
+    margin-bottom: 20px;
+    background: #eef2f3;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.about-item h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #0C3A67;
+}
+
+.about-item .desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
